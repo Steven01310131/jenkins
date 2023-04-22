@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage("building"){
             steps {
+                echo "building"
 
             }
         }
