@@ -1,9 +1,9 @@
-pipeline{
+pipeline {
     agent any 
-    stages{
+    stages {
         stage("building"){
-            steps{
-                
+            steps {
+
             }
         }
     }
