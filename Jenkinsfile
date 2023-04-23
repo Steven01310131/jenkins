@@ -39,17 +39,5 @@ pipeline {
             }
         }
     }
-    post { //logic to performed after the stages
-
-        always{// as the name implies
-
-        }
-        success{
-
-        }
-        failure{
-
-        }
-
-    }
+}
 }
