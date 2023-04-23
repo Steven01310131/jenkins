@@ -24,6 +24,7 @@ pipeline {
             when{//when should this stage execute
                 expression{
                     params.executeTests
+               }
             }
             steps {   
                 script{
@@ -39,5 +40,4 @@ pipeline {
             }
         }
     }
-}
 }
