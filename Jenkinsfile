@@ -1,4 +1,3 @@
-def gv
 
 pipeline {
     agent any
@@ -12,14 +11,6 @@ pipeline {
                 script {
                     echo "building app"
                     sh 'mvn package'
-                }
-            }
-        }
-        stage("build jar") {
-            steps {
-                script {
-                    echo "building jar"
-                    gv.buildApp()
                 }
             }
         }
