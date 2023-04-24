@@ -33,9 +33,9 @@ pipeline {
                     echo "building docker image"
                     withCredentials([usernamePassword(credentialsId: 'a4', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
                     sh 'docker images'
-                    sh "docker build -t steven01310131/a4:$IMAGE_NAME ."
+                    sh "docker build -t steven01310131/a4:${IMAGE_NAME} ."
                     sh "echo $PASS | docker login -u $USER --password-stdin"
-                    sh "docker push steven01310131/a4:$IMAGE_NAME"
+                    sh "docker push steven01310131/a4:${IMAGE_NAME}"
 
                 }
             }
