@@ -19,7 +19,7 @@ pipeline {
                 }
             }
         }
-        stage("init") {
+        stage("build app") {
             steps {
                 script {
                     echo "building app"
